@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 //Faça um programa que receba dois números e mostre qual deles é o menor.
 

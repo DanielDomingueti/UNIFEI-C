@@ -23,7 +23,7 @@ int main() {
 	printf("Digite a profundidade: ");
 	scanf("%f", &depth);
 	
-	const float ballVolume = (4/3) * M_PI * pow((diameter/2), 3);
+	const float ballVolume = (4/3) * acos(-1) * pow((diameter/2), 3);
 	const float boxVolume = height * width * depth;
 	
 	if (ballVolume <= boxVolume) {
