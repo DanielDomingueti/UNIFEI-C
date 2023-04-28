@@ -15,7 +15,7 @@ int main() {
 	printf("Digite o valor do ângulo em graus: ");
 	scanf("%f", &angleDegrees);
 	
-	angleRadiant = angleDegrees * M_PI / 180;
+	angleRadiant = angleDegrees * acos(-1) / 180;
 
 	sine = sin(angleRadiant);
 	cosine = cos(angleRadiant);

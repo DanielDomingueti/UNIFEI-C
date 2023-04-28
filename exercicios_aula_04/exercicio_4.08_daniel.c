@@ -15,7 +15,7 @@ int main() {
 	printf("Digite o valor da altura: ");
 	scanf("%f", &height);
 	
-	volume = M_PI * pow(radius, 2) * height;
+	volume = acos(-1) * pow(radius, 2) * height;
 	
 	printf("O volume do cilindro é %.2f\n", volume);
 
