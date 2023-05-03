@@ -10,12 +10,12 @@ int main() {
 	const int dropQuantity = 5;
 	const int weightRange = 2;
 
-	printf("Digite o peso da criança: ");
+	//printf("Digite o peso da criança: ");
 	scanf("%f", &childWeight);
 	
 	adequateDropQuantity = (childWeight / weightRange) * dropQuantity;
 	
-	printf("Quantidade adequada de gotas: %d\n", adequateDropQuantity);
+	printf("%d", adequateDropQuantity);
 
 	return 0;
 }

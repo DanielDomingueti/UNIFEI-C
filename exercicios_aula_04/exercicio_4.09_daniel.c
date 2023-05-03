@@ -8,15 +8,15 @@ int main() {
 	int totalAbsences;
 	float percentage;
 	
-	printf("Digite a carga horária total da disciplina (valor inteiro): ");
+	//printf("Digite a carga horária total da disciplina (valor inteiro): ");
 	scanf("%d", &totalHours);
 
-	printf("Digite a quantidade de horas de faltas acumuladas (valor inteiro): ");
+	//printf("Digite a quantidade de horas de faltas acumuladas (valor inteiro): ");
 	scanf("%d", &totalAbsences);
 	
 	percentage = (1.0 * totalAbsences) / (1.0 * totalHours) * 100;
 	
-	printf("A porcentagem de suas faltas considerando %d horas de faltas acumuladas e %d horas de carga horária total, resulta em %.2f porcento \n", totalAbsences, totalHours, percentage);
+	printf("%f", percentage);
 	
 	return 0;
 }

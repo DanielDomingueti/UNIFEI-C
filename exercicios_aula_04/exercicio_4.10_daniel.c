@@ -9,7 +9,7 @@ int main() {
 	int requiredProductionTimeSeconds;
 	int hours, minutes, seconds;
 	
-	printf("Indique a quantidade de peças a serem produzidas: ");
+	//printf("Indique a quantidade de peças a serem produzidas: ");
 	scanf("%d", &pieceQuantity);
 	
 	requiredProductionTimeSeconds = pieceQuantity * productionTimePerUnit;

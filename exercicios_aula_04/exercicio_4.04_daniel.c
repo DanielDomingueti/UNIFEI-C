@@ -16,17 +16,17 @@ int main() {
 	float firstAgencyFinalPrice;
 	float secondAgencyFinalPrice;
 	
-	printf("Digite a quantidade de km a serem percorridos: ");
+	//printf("Digite a quantidade de km a serem percorridos: ");
 	scanf("%f", &distanceKm);
 	
-	printf("Digite a quantidade de dias do aluguel: ");
+	//printf("Digite a quantidade de dias do aluguel: ");
 	scanf("%d", &rentDays);
 	
 	firstAgencyFinalPrice = (firstAgencyDailyPrice * rentDays) + (firstAgencyPricePerKm * distanceKm);
 	
 	secondAgencyFinalPrice = (secondAgencyDailyPrice * rentDays) + (secondAgencyPricePerKm * distanceKm);
 	
-	printf("%.2f %.2f", firstAgencyFinalPrice, secondAgencyFinalPrice);
+	printf("%f %f", firstAgencyFinalPrice, secondAgencyFinalPrice);
 	
 	return 0;
 }

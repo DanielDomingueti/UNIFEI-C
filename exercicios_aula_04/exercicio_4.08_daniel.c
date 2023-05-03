@@ -9,15 +9,15 @@ int main() {
 	float height;
 	float volume;
 	
-	printf("Digite o valor do raio: ");
+	//printf("Digite o valor do raio: ");
 	scanf("%f", &radius);
 	
-	printf("Digite o valor da altura: ");
+	//printf("Digite o valor da altura: ");
 	scanf("%f", &height);
 	
 	volume = acos(-1) * pow(radius, 2) * height;
 	
-	printf("O volume do cilindro é %.2f\n", volume);
+	printf("%.2f\n", volume);
 
 	return 0;
 }

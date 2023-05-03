@@ -14,7 +14,7 @@ int main() {
 	float cubeRadiating = 1.0/3.0;
 	float fourthRadiating = 1.0/4.0;
 	
-	printf("Digite um número inteiro: ");
+	//printf("Digite um número inteiro: ");
 	scanf("%d", &value);
 	
 	cubeRoot = pow(value, cubeRadiating);
@@ -22,7 +22,7 @@ int main() {
 	
 	rootSum = cubeRoot + fourthRoot;
 	
-	printf("Soma das raízes: %.2f", rootSum);
+	printf("%f", rootSum);
 
 	return 0;
 }

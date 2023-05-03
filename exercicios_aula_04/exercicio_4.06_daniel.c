@@ -12,20 +12,20 @@ int main() {
 	float p;
 	float area;
 	
-	printf("Digite o primeiro valor do lado do triângulo: ");
+	//printf("Digite o primeiro valor do lado do triângulo: ");
 	scanf("%f", &firstSide);
 	
-	printf("Digite o segundo valor do lado do triângulo: ");
+	//printf("Digite o segundo valor do lado do triângulo: ");
 	scanf("%f", &secondSide);
 	
-	printf("Digite o terceiro valor do lado do triângulo: ");
+	//printf("Digite o terceiro valor do lado do triângulo: ");
 	scanf("%f", &thirdSide);
 	
 	p = (firstSide + secondSide + thirdSide) / 2;
 	
 	area = sqrt(p * (p-firstSide) * (p-secondSide) * (p-thirdSide));
 	
-	printf("Área final: %.1f", area);
+	printf("%.1f", area);
 
 	return 0;
 }

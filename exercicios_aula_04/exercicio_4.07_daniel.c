@@ -12,7 +12,7 @@ int main() {
 	float cosine;
 	float tangent;
 	
-	printf("Digite o valor do ângulo em graus: ");
+	//printf("Digite o valor do ângulo em graus: ");
 	scanf("%f", &angleDegrees);
 	
 	angleRadiant = angleDegrees * acos(-1) / 180;
@@ -21,7 +21,7 @@ int main() {
 	cosine = cos(angleRadiant);
 	tangent = tan(angleRadiant);
 
-    	printf("%.2f %.2f %.2f\n", sine, cosine, tangent);
+    printf("%.2f %.2f %.2f\n", sine, cosine, tangent);
 
 	return 0;
 }

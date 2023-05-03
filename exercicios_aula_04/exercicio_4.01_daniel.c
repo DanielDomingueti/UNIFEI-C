@@ -9,15 +9,16 @@ int main() {
 	
 	float realToDolar;
 
-	printf("Digite um valor em reais: ");
+	//printf("Digite um valor em reais: ");
 	scanf("%f", &realValue);
 	
-	printf("Digite a cotação do dólar: ");
+	//printf("Digite a cotação do dólar: ");
 	scanf("%f", &dolarPrice);
 	
 	realToDolar = realValue / dolarPrice;
 	
-	printf("O valor em reais R$%.2f convertido para dólares a uma cotação de R$%.2f, resulta em: R$%.2f\n", realValue, dolarPrice, realToDolar);
+	printf("%f", realToDolar);
+	//printf("O valor em reais R$%.2f convertido para dólares a uma cotação de R$%.2f, resulta em: R$%.2f\n", realValue, dolarPrice, realToDolar);
 	
 	return 0;
 

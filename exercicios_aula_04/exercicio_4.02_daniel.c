@@ -8,15 +8,15 @@ int main() {
 	float finalPrice;
 	int discountPercentage;
 	
-	printf("Digite o valor do produto: ");
+	//printf("Digite o valor do produto: ");
 	scanf("%f", &initialPrice);
 	
-	printf("Digite o valor da porcentagem (número inteiro): ");
+	//printf("Digite o valor da porcentagem (número inteiro): ");
 	scanf("%d", &discountPercentage);
 	
 	finalPrice = initialPrice - (initialPrice * discountPercentage / 100);
 	
-	printf("%.2f %d", finalPrice, discountPercentage);
+	printf("%f %d", finalPrice, discountPercentage);
 	
 	return 0;
 
