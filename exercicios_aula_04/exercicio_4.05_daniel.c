@@ -22,7 +22,7 @@ int main() {
 	
 	rootSum = cubeRoot + fourthRoot;
 	
-	printf("%f", rootSum);
+	printf("%.2f", rootSum);
 
 	return 0;
 }

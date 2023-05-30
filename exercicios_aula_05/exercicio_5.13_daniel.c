@@ -10,7 +10,7 @@ int main() {
 
 	int age;
 	
-	printf("Digite a idade: ");
+	//printf("Digite a idade: ");
 	scanf("%d", &age);
 	
 	if (age >= 4.0 && age <= 5.0) {

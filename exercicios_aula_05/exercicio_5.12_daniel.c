@@ -8,13 +8,13 @@ int main() {
 	float secondSide;
 	float thirdSide;
 	
-	printf("Primeiro lado: ");
+	//printf("Primeiro lado: ");
 	scanf("%f", &firstSide);
 
-	printf("Segundo lado: ");
+	//printf("Segundo lado: ");
 	scanf("%f", &secondSide);
 	
-	printf("Terceiro lado: ");
+	//printf("Terceiro lado: ");
 	scanf("%f", &thirdSide);
 	
 	//isosceles

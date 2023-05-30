@@ -11,25 +11,22 @@ int main() {
 	float width;
 	float depth;
 	
-	printf("Digite o diametro: ");
+	//printf("Digite o diametro: ");
 	scanf("%f", &diameter);
 	
-	printf("Digite a altura: ");
+	//printf("Digite a altura: ");
 	scanf("%f", &height);
 	
-	printf("Digite a largura: ");
+	//printf("Digite a largura: ");
 	scanf("%f", &width);
 	
-	printf("Digite a profundidade: ");
+	//printf("Digite a profundidade: ");
 	scanf("%f", &depth);
 	
-	const float ballVolume = (4/3) * acos(-1) * pow((diameter/2), 3);
-	const float boxVolume = height * width * depth;
-	
-	if (ballVolume <= boxVolume) {
-		printf("sim\n");
+	if (diameter < height && diameter < width && diameter < depth) {
+		printf("sim");
 	} else {
-		printf("nao\n");
+		printf("nao");
 	}
 	
 	return 0;

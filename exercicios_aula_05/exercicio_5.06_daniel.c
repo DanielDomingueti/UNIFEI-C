@@ -7,16 +7,16 @@ int main() {
 	float income;
 	float loan;
 	
-	printf("Digite o valor do salário: ");
+	//printf("Digite o valor do salário: ");
 	scanf("%f", &income);
 	
-	printf("Digite o valor da prestação do empréstimo: ");
+	//printf("Digite o valor da prestação do empréstimo: ");
 	scanf("%f", &loan);
 
 	if ((1.0 * loan) / (1.0 * income) > 0.2) {
-		printf("Emprestimo nao concedido\n");
+		printf("emprestimo nao concedido\n");
 	} else {
-		printf("Emprestimo concedido\n");
+		printf("emprestimo concedido\n");
 	}
 
 	return 0;

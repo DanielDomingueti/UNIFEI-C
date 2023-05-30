@@ -13,13 +13,13 @@ int main() {
 	float x1;
 	float x2;
 	
-	printf("Digite A: ");
+	//printf("Digite A: ");
 	scanf("%f", &a);
 
-	printf("Digite B: ");
+	//printf("Digite B: ");
 	scanf("%f", &b);
 	
-	printf("Digite C: ");
+	//printf("Digite C: ");
 	scanf("%f", &c);
 
 	delta = pow(b, 2) - (4 * a * c);
@@ -29,7 +29,7 @@ int main() {
 		x1 = (-b + sqrt(delta)) / (2.0 * a); 
 		x2 = (-b - sqrt(delta)) / (2.0 * a);
 		
-		printf("%f, %f\n", x1, x2);
+		printf("%f %f\n", x2, x1);
 		return 0;
 		
 	//possui 1 raiz pois delta == 0
@@ -42,7 +42,7 @@ int main() {
 	//nao possui raiz real
 	} else {
 	
-		printf("Delta negativo, sem raiz real\n");
+		printf("sem raizes reais\n");
 		return 0;
 	
 	}

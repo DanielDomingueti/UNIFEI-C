@@ -8,17 +8,17 @@ int main() {
 	float secondGrade;
 	float average;
 	
-	printf("Digite a primeira nota: ");
+	//printf("Digite a primeira nota: ");
 	scanf("%f", &firstGrade);
 	
-	printf("Digite a segunda nota: ");
+	//printf("Digite a segunda nota: ");
 	scanf("%f", &secondGrade);
 	
 	if (firstGrade < 0 || firstGrade > 10 || secondGrade < 0 || secondGrade > 10) {
-		printf("Notas incorretas\n");
+		printf("notas incorretas\n");
 	} else {
 		average = (firstGrade + secondGrade) / 2;
-		printf("Media: %f\n", average);
+		printf("%f\n", average);
 	}
 
 	return 0;

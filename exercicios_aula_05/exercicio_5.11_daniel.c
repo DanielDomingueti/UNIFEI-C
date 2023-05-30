@@ -11,10 +11,10 @@ int main() {
 	int age;
 	int workingTime;
 	
-	printf("Digite a idade: ");
+	//printf("Digite a idade: ");
 	scanf("%d", &age);
 	
-	printf("Tempo de trabalho: ");
+	//printf("Tempo de trabalho: ");
 	scanf("%d", &workingTime);
 	
 	if (workingTime > age) {

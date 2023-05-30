@@ -6,18 +6,19 @@
 int main() {
 
 	int value;
-	float result;
+	int result;
+	float resultDecimal;
 	
-	printf("Digite um valor inteiro: ");
+	//printf("Digite um valor inteiro: ");
 	scanf("%d", &value);
 	
 	if (value >= 0) {
-		result = sqrt(value);
+		resultDecimal = sqrt(1.0*value);
+		printf("%f", resultDecimal);
 	} else {
-		result = pow(value, 2);
+		result = value*value;
+	    printf("%d", result);
 	}
-
-	printf("Resultado: %f\n", result);
 
 	return 0;
 }

@@ -4,23 +4,23 @@
 
 int main() {
 
-	float firstNumber;
-	float secondNumber;
-	float thirdNumber;
-	float fourthNumber;	
-	float smaller;
+	int firstNumber;
+	int secondNumber;
+	int thirdNumber;
+	int fourthNumber;	
+	int smaller;
 
-	printf("Digite o primeiro número: ");
-	scanf("%f", &firstNumber);
+	//printf("Digite o primeiro número: ");
+	scanf("%d", &firstNumber);
 	
-	printf("Digite o segundo número: ");
-	scanf("%f", &secondNumber);
+	//printf("Digite o segundo número: ");
+	scanf("%d", &secondNumber);
 	
-	printf("Digite o terceiro número: ");
-	scanf("%f", &thirdNumber);
+	//printf("Digite o terceiro número: ");
+	scanf("%d", &thirdNumber);
 	
-	printf("Digite o quarto número: ");
-	scanf("%f", &fourthNumber);
+	//printf("Digite o quarto número: ");
+	scanf("%d", &fourthNumber);
 
 	smaller = firstNumber;
 	
@@ -36,12 +36,7 @@ int main() {
 		smaller = fourthNumber;
 	}
 	
-	
-	if (firstNumber == secondNumber == thirdNumber == fourthNumber) {
-		printf("Valores iguais!\n");
-	} else {
-		printf("Menor valor: %f\n", smaller);
-	}
+	printf("%d\n", smaller);
 	
 	return 0;
 }

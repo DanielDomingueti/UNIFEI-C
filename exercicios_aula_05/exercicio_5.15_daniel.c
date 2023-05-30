@@ -6,17 +6,17 @@ int main() {
 
 	int number;
 	
-	printf("Digite um valor inteiro: ");
+	//printf("Digite um valor inteiro: ");
 	scanf("%d", &number);
 	
 	if (number % 3 == 0 && !(number % 3 == 0 && number % 5 == 0)) {
-		printf("Divisivel por 3\n");
+		printf("divisivel por 3\n");
 	}
 	else if (number % 5 == 0 && !(number % 3 == 0 && number % 5 == 0)) {
-		printf("Divisivel por 5\n");
+		printf("divisivel por 5\n");
 	}
 	else {
-		printf("Nao divisivel\n");
+		printf("nao divisivel\n");
 	}
 
 	return 0;

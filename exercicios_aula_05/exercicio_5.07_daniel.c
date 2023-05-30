@@ -13,10 +13,10 @@ int main() {
 	const int RJ = 3;
 	const int ES = 4;
 	
-	printf("Digite o valor do produto: ");
+	//printf("Digite o valor do produto: ");
 	scanf("%f", &productPrice);
 
-	printf("Digite o ID do estado (1 = MG; 2 = SP; 3 = RJ; e 4 = ES): ");
+	//printf("Digite o ID do estado (1 = MG; 2 = SP; 3 = RJ; e 4 = ES): ");
 	scanf("%d", &state);
 
 	if (state == MG) {
@@ -30,12 +30,9 @@ int main() {
 	} 
 	else if (state == ES) {
 		finalPrice = productPrice + productPrice * (8.0/100.0);
-	} else {
-		printf("Estado invalido para a questao\n");
-		return 0;
 	}
 	
-	printf("Valor inicial: %.2f, estado ID: %d, valor final: %.2f\n", productPrice, state, finalPrice);
+	printf("%.2f\n", finalPrice);
 	
 	return 0;
 }

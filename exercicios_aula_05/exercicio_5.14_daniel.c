@@ -10,19 +10,19 @@ int main() {
 	char sex;
 	float weight;
 	
-	printf("Digite a altura: ");
+	//printf("Digite a altura: ");
 	scanf("%f", &height);
 	
-	printf("Digite o sexo (m ou f): ");
+	//printf("Digite o sexo (m ou f): ");
 	scanf(" %c", &sex);
 	
 	if (sex == 'm' || sex == 'M') {
 		weight = (72.7 * height) - 58.0;
-		printf("Peso ideal M: %.2f\n", weight);
+		printf("%f\n", weight);
 	} 
 	else if (sex == 'f' || sex == 'F') {
 		weight = (62.1 * height) - 44.7;
-		printf("Peso ideal F: %.2f\n", weight);
+		printf("%f\n", weight);
 	}
 	else {
 		printf("Sexo indefinido\n");

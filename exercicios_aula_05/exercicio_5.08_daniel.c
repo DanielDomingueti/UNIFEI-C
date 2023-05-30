@@ -6,7 +6,7 @@ int main() {
 
 	int value;
 	
-	printf("Digite um valor inteiro: ");
+	//printf("Digite um valor inteiro: ");
 	scanf("%d", &value);
 	
 	if (value % 11 == 0) {

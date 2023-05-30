@@ -17,7 +17,7 @@ int main() {
 	
 	realToDolar = realValue / dolarPrice;
 	
-	printf("%f", realToDolar);
+	printf("%.2f", realToDolar);
 	//printf("O valor em reais R$%.2f convertido para dólares a uma cotação de R$%.2f, resulta em: R$%.2f\n", realValue, dolarPrice, realToDolar);
 	
 	return 0;

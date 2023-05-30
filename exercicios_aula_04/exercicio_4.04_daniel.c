@@ -26,7 +26,7 @@ int main() {
 	
 	secondAgencyFinalPrice = (secondAgencyDailyPrice * rentDays) + (secondAgencyPricePerKm * distanceKm);
 	
-	printf("%f %f", firstAgencyFinalPrice, secondAgencyFinalPrice);
+	printf("%.2f %.2f", firstAgencyFinalPrice, secondAgencyFinalPrice);
 	
 	return 0;
 }

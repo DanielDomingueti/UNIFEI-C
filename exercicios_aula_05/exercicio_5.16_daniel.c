@@ -7,10 +7,10 @@ int main() {
 	float height = 0.0;
 	char sex;
 	
-	printf("Digite a altura: ");
+	//printf("Digite a altura: ");
 	scanf("%f", &height);
 	
-	printf("Digite o sexo (m ou f): ");
+	//printf("Digite o sexo (m ou f): ");
 	scanf(" %c", &sex);
 
 	if (((sex == 'm' || sex == 'M') && height >= 1.75)
