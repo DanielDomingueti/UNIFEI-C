@@ -1,29 +1,35 @@
 #include <stdio.h>
+#include <string.h>
 #define SIZE 50
 
-//Ler duas strings A e B e mostrar quantas vezes a string A ocorre dentro da string B.
+// Ler duas strings A e B e mostrar quantas vezes a string A ocorre dentro da string B.
 
 int main() {
-
     char strA[SIZE];
     char strB[SIZE];
-    int counterB = 0, counterA = 0, times = 0;
+    int lenA, lenB;
+    int i, j, times = 0;
 
     scanf("%s", strA);
-    scanf(" %s", strB);
+    scanf("%s", strB);
 
-    while (strB[counterB] != '\0') {
-        if (strA[counterA] == strB[counterB] && strA[counterA] != '\0') {
-            counterA++;
-        } 
-        else if (strA[counterA] == '\0') {
-            counterA = counterB;
+    lenA = strlen(strA);
+    lenB = strlen(strB);
+
+    for (i = 0; i <= lenB - lenA; i++) {
+        int found = 1;
+        for (j = 0; j < lenA; j++) {
+            if (strA[j] != strB[i + j]) {
+                found = 0;
+                break;
+            }
+        }
+        if (found) {
             times++;
         }
-        counterB++;
     }
 
-    printf("%d", times);
+    printf("%d\n", times);
 
     return 0;
 }
