@@ -6,22 +6,33 @@
 int somafat(int n);
 
 int somafat(int n) {
-    
-    int sum = 0, fat = 1;
-    int i;
+    int fatorial = 1;
+    int soma = 0;
 
-    for (i = 1; i <= n; i++) {
-        fat *= i;
+    if (n <= 0) return 0;
+
+    // Calcula o fatorial de N
+    for (int i = 1; i <= n; i++) {
+        fatorial *= i;
     }
 
-    i = 0;
-    char fatToString[15];
-    sprintf(fatToString, "%d", fat);
-
-    while (fatToString[i] != '\0') {
-        sum += (int) fatToString[i] - '0';
-        i++;
+    // Soma os algarismos do fatorial
+    while (fatorial != 0) {
+        soma += fatorial % 10;
+        fatorial /= 10;
     }
-        
-    return sum;
+
+    return soma;
+}
+
+int main() {
+
+    int n;
+    scanf(" %d", &n);
+
+    int res = somafat(n);
+
+    printf("%d ", res);
+
+    return 0;
 }
